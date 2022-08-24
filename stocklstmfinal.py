@@ -52,7 +52,7 @@ regressor = Sequential()
 regressor.add(LSTM(units = 50, return_sequences = True, input_shape = (X_train.shape[1], 1)))
 regressor.add(Dropout(0.2))
 regressor.add(LSTM(units = 50, return_sequences = True))
-regressor.add(Dropout(0.2))
+
 regressor.add(LSTM(units = 50, return_sequences = True))
 regressor.add(Dropout(0.2))
 regressor.add(LSTM(units = 50))
